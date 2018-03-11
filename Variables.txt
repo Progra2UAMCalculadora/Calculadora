@@ -1,0 +1,44 @@
+Form Principal
+//TextArea
+TextAreaCinta
+
+//Combobox
+ComboBoxColores
+	Color Blanco
+	Color Negro
+	Color Verde
+	Color Amarillo
+
+//Botones
+btnMR
+btnMC
+btnMU
+btnCE
+btnPunto
+btnIgual
+btnDivision
+btnMulti
+btnMenos
+btnSuma
+btn0
+btn1
+btn2
+btn3
+btn4
+btn5
+btn6
+btn7
+btn8
+btn9
+
+//Otros Botones
+btnSalir
+txtPantalla
+
+#########################################
+Form Secundario
+LabelFotoCreadores
+txtCreadores
+btnCreadores
+btnCreadoresFoto
+btnAtras
