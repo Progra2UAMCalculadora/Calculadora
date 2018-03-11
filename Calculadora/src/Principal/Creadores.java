@@ -59,6 +59,8 @@ public class Creadores extends javax.swing.JFrame {
 
         btnCreadoresFoto.setBackground(new java.awt.Color(0, 204, 204));
         btnCreadoresFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CREADORES.png"))); // NOI18N
+        btnCreadoresFoto.setBorder(null);
+        btnCreadoresFoto.setBorderPainted(false);
         btnCreadoresFoto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreadoresFotoActionPerformed(evt);
@@ -72,13 +74,15 @@ public class Creadores extends javax.swing.JFrame {
             .addGroup(PanelSecundarioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(PanelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCreadoresFoto)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelSecundarioLayout.createSequentialGroup()
+                    .addGroup(PanelSecundarioLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                         .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)))
-                .addGap(21, 21, 21))
+                        .addGap(58, 58, 58))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelSecundarioLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCreadoresFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addComponent(LabelFotoCreadores, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PanelSecundarioLayout.setVerticalGroup(

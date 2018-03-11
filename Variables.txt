@@ -14,6 +14,7 @@ btnMR
 btnMC
 btnMU
 btnCE
+btnC
 btnPunto
 btnIgual
 btnDivision
@@ -34,11 +35,10 @@ btn9
 //Otros Botones
 btnSalir
 txtPantalla
-
+btnCreadores
 #########################################
 Form Secundario
 LabelFotoCreadores
 txtCreadores
-btnCreadores
 btnCreadoresFoto
 btnAtras
