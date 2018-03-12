@@ -85,17 +85,17 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="btnEncendidoApagado" min="-2" pref="47" max="-2" attributes="0"/>
-                                          <Component id="btnMR" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="btnMS" min="-2" pref="48" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnMC" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="btnMR" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
                                           <Component id="btnCE" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="btnC" min="-2" pref="48" max="-2" attributes="0"/>
-                                          <Component id="btnMU" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="btnMC" min="-2" pref="48" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -146,9 +146,9 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btnMS" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                       <Component id="btnMR" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                       <Component id="btnMC" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                                      <Component id="btnMU" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -270,6 +270,18 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
+        <Component class="javax.swing.JButton" name="btnMS">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MS"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMSActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JButton" name="btnMR">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -278,6 +290,9 @@
             <Property name="text" type="java.lang.String" value="MR"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMRActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnMC">
           <Properties>
@@ -287,15 +302,9 @@
             <Property name="text" type="java.lang.String" value="MC"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnMU">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="MU"/>
-            <Property name="enabled" type="boolean" value="false"/>
-          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMCActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnC">
           <Properties>
