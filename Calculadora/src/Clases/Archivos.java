@@ -31,5 +31,22 @@ public class Archivos {
         escribir.close();
 
     }
+    public void GuardarCinta(String cinta) throws IOException {
+        File nuevo = new File("InfoCinta.txt");
+
+        if (!nuevo.exists()) {
+            CrearArchivo(nuevo);
+        }
+        FileWriter escribir = new FileWriter(nuevo, true);
+        BufferedWriter buffer = new BufferedWriter(escribir);
+        
+        String registro = cinta+"\r\n";
+        
+        buffer.write(registro);
+        
+        buffer.close();
+        escribir.close();
+
+    }
     
 }

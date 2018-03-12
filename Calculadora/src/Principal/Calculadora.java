@@ -722,6 +722,10 @@ public class Calculadora extends javax.swing.JFrame {
         if(pantalla.length()<=0){
             txtPantalla.setText("0.");
         }else{
+            if(!Buscapunto.punto(txtPantalla.getText()) && inicio==false){
+                txtPantalla.setText(txtPantalla.getText()+".");
+                inicio=false;
+            }
             if(!Buscapunto.punto(txtPantalla.getText()) && inicio==true){
                 txtPantalla.setText(txtPantalla.getText()+".");
                 inicio=false;
@@ -739,9 +743,15 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
-        if(!txtPantalla.getText().isEmpty()){
-           txtPantalla.setText("");
-           TextAreaCinta.append("--Clear--\n"); 
+        Archivos archivos = new Archivos();
+        if(!txtPantalla.getText().isEmpty() && inicio==false){
+            try {
+                txtPantalla.setText("");
+                TextAreaCinta.append("--Clear--\n");
+                archivos.GuardarCinta("--Clear--\r\n");
+            } catch (IOException ex) {
+                Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
     }//GEN-LAST:event_btnCEActionPerformed
@@ -782,43 +792,43 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void btnMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenosActionPerformed
         if(!txtPantalla.getText().isEmpty() && inicio==false){
-           Temporal01 =  txtPantalla.getText();
-           signo = "-";
-           txtPantalla.setText("");
-           TextAreaCinta.append("  "+Temporal01+"\n");
+            Temporal01 =  txtPantalla.getText();
+            signo = "-";
+            txtPantalla.setText("");
+            TextAreaCinta.append("  "+Temporal01+"\n");
         }
     }//GEN-LAST:event_btnMenosActionPerformed
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
         if(!txtPantalla.getText().isEmpty() && inicio==false){
-           Temporal01 =  txtPantalla.getText();
-           signo = "+";
-           txtPantalla.setText("");
-           TextAreaCinta.append("  "+Temporal01+"\n");
+            Temporal01 =  txtPantalla.getText();
+            signo = "+";
+            txtPantalla.setText("");
+            TextAreaCinta.append("  "+Temporal01+"\n");
         }
     }//GEN-LAST:event_btnSumaActionPerformed
 
     private void btnMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiActionPerformed
         if(!txtPantalla.getText().isEmpty() && inicio==false){
-           Temporal01 =  txtPantalla.getText();
-           signo = "*";
-           txtPantalla.setText("");
-           TextAreaCinta.append("  "+Temporal01+"\n");
+            Temporal01 =  txtPantalla.getText();
+            signo = "*";
+            txtPantalla.setText("");
+            TextAreaCinta.append("  "+Temporal01+"\n");
         }
     }//GEN-LAST:event_btnMultiActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-       if(!txtPantalla.getText().isEmpty() && inicio==false){
-           Temporal01 =  txtPantalla.getText();
-           signo = "/";
-           txtPantalla.setText("");
-           TextAreaCinta.append("  "+Temporal01+"\n");
+        if(!txtPantalla.getText().isEmpty() && inicio==false){
+            Temporal01 =  txtPantalla.getText();
+            signo = "/";
+            txtPantalla.setText("");
+            TextAreaCinta.append("  "+Temporal01+"\n");
         }
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
         Metodos calcular = new Metodos();
-        Archivos errores = new Archivos();
+        Archivos archivos = new Archivos();
         String resultado, Temporal;
         try {
             Temporal02 = txtPantalla.getText();
@@ -831,11 +841,16 @@ public class Calculadora extends javax.swing.JFrame {
                     txtPantalla.setText(resultado);
                     TextAreaCinta.append(signo+" "+Temporal02+"\n");
                     TextAreaCinta.append("------\n"+"  "+resultado+"\n\n");
+                    archivos.GuardarCinta(" "+Temporal01+"\n");
+                    archivos.GuardarCinta(signo+" "+Temporal02+"\n");
+                    archivos.GuardarCinta("------\n");
+                    archivos.GuardarCinta("  "+resultado+"\r\n");
+                    
                 }
             }
         } catch (Exception e) {
             try {
-                errores.GuardarError("Error: "+e.toString());
+                archivos.GuardarError("Error: "+e.toString());
             } catch (IOException ex) {
                 Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
             }
