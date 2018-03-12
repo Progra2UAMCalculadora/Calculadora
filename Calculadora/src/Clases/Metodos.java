@@ -32,14 +32,4 @@ public class Metodos {
         }
         return  Solucion=Resultado.toString();
     }
-    public String HacerCalculo(String Temporal01, String signo){
-        String Solucion;
-        Double Resultado=0.0;
-        
-        
-        if(signo.equals("=")){
-            Resultado = Double.parseDouble(Temporal01);
-        }
-        return  Solucion=Resultado.toString();
-    }
 }
