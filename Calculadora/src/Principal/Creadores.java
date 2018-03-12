@@ -118,6 +118,7 @@ public class Creadores extends javax.swing.JFrame {
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
         Calculadora selcam = new Calculadora();
+        selcam.btnEncendidoApagado.isSelected();
         selcam.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAtrasActionPerformed

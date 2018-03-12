@@ -18,7 +18,7 @@ public class Archivos {
     public void GuardarError(String error) throws IOException {
         File nuevo = new File("Errores.txt");
         
-        nuevo.delete();
+        //nuevo.delete();
         if (!nuevo.exists()) {
             CrearArchivo(nuevo);
         }

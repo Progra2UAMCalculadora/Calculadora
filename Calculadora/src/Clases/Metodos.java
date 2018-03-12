@@ -1,6 +1,7 @@
 package Clases;
 
 public class Metodos {
+    //metodo para reconocer el punto
     public boolean punto(String punto){
         boolean resultado = false;
         for(int i=0; i<punto.length(); i++){
@@ -11,6 +12,7 @@ public class Metodos {
         }
         return resultado;
     }
+    //metodo para hacer los calculos
     public String HacerCalculo(String Temporal01, String Temporal02,String signo){
         String Solucion;
         Double Resultado=0.0;

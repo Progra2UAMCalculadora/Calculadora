@@ -748,6 +748,7 @@ public class Calculadora extends javax.swing.JFrame {
             try {
                 txtPantalla.setText("");
                 TextAreaCinta.append("--Clear--\n");
+                //Guardando en el archivo
                 archivos.GuardarCinta("--Clear--\r\n");
             } catch (IOException ex) {
                 Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
@@ -841,6 +842,7 @@ public class Calculadora extends javax.swing.JFrame {
                     txtPantalla.setText(resultado);
                     TextAreaCinta.append(signo+" "+Temporal02+"\n");
                     TextAreaCinta.append("------\n"+"  "+resultado+"\n\n");
+                    //Guardando en el archivo 
                     archivos.GuardarCinta(" "+Temporal01+"\n");
                     archivos.GuardarCinta(signo+" "+Temporal02+"\n");
                     archivos.GuardarCinta("------\n");
@@ -917,7 +919,7 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton btnCE;
     private javax.swing.JButton btnCreadores;
     private javax.swing.JButton btnDivision;
-    private javax.swing.JToggleButton btnEncendidoApagado;
+    public static javax.swing.JToggleButton btnEncendidoApagado;
     private javax.swing.JButton btnIgual;
     private javax.swing.JButton btnMC;
     private javax.swing.JButton btnMR;
