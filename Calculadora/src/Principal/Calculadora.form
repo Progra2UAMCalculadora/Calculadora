@@ -90,11 +90,11 @@
                                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="btnMR" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
-                                          <Component id="btnCE" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="btnC" alignment="1" min="-2" pref="48" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnC" min="-2" pref="48" max="-2" attributes="0"/>
+                                          <Component id="btnCE" min="-2" pref="48" max="-2" attributes="0"/>
                                           <Component id="btnMC" min="-2" pref="48" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -140,8 +140,8 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="btnC" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                       <Component id="btnCE" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                                      <Component id="btnC" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                                       <Component id="btnEncendidoApagado" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -306,16 +306,16 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMCActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnC">
+        <Component class="javax.swing.JButton" name="btnCE">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="C"/>
+            <Property name="text" type="java.lang.String" value="CE"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCEActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btn7">
@@ -528,23 +528,23 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Creadores"/>
+            <Property name="text" type="java.lang.String" value="Acerca de..."/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCreadoresActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnCE">
+        <Component class="javax.swing.JButton" name="btnC">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="CE"/>
+            <Property name="text" type="java.lang.String" value="C"/>
             <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCEActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JToggleButton" name="btnEncendidoApagado">

@@ -49,7 +49,7 @@ public class Calculadora extends javax.swing.JFrame {
         btnMS = new javax.swing.JButton();
         btnMR = new javax.swing.JButton();
         btnMC = new javax.swing.JButton();
-        btnC = new javax.swing.JButton();
+        btnCE = new javax.swing.JButton();
         btn7 = new javax.swing.JButton();
         btn8 = new javax.swing.JButton();
         btn9 = new javax.swing.JButton();
@@ -68,7 +68,7 @@ public class Calculadora extends javax.swing.JFrame {
         btnSuma = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         btnCreadores = new javax.swing.JButton();
-        btnCE = new javax.swing.JButton();
+        btnC = new javax.swing.JButton();
         btnEncendidoApagado = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -133,12 +133,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        btnC.setBackground(new java.awt.Color(255, 255, 255));
-        btnC.setText("C");
-        btnC.setEnabled(false);
-        btnC.addActionListener(new java.awt.event.ActionListener() {
+        btnCE.setBackground(new java.awt.Color(255, 255, 255));
+        btnCE.setText("CE");
+        btnCE.setEnabled(false);
+        btnCE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCActionPerformed(evt);
+                btnCEActionPerformed(evt);
             }
         });
 
@@ -295,7 +295,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         btnCreadores.setBackground(new java.awt.Color(255, 255, 255));
-        btnCreadores.setText("Creadores");
+        btnCreadores.setText("Acerca de...");
         btnCreadores.setEnabled(false);
         btnCreadores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -303,12 +303,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        btnCE.setBackground(new java.awt.Color(255, 255, 255));
-        btnCE.setText("CE");
-        btnCE.setEnabled(false);
-        btnCE.addActionListener(new java.awt.event.ActionListener() {
+        btnC.setBackground(new java.awt.Color(255, 255, 255));
+        btnC.setText("C");
+        btnC.setEnabled(false);
+        btnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCEActionPerformed(evt);
+                btnCActionPerformed(evt);
             }
         });
 
@@ -363,10 +363,10 @@ public class Calculadora extends javax.swing.JFrame {
                                     .addGap(2, 2, 2)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(btnMR, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnCE, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btnC, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnCE, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnMC, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -399,8 +399,8 @@ public class Calculadora extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnCE, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(btnEncendidoApagado, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -474,7 +474,7 @@ public class Calculadora extends javax.swing.JFrame {
             ComboBoxColores.setBackground(Color.white);
             //Seteamos color de letra de botones
             btnMS.setForeground(Color.black);btnMR.setForeground(Color.black);
-            btnMC.setForeground(Color.black);btnC.setForeground(Color.black);
+            btnMC.setForeground(Color.black);btnCE.setForeground(Color.black);
             btnPunto.setForeground(Color.black);btnIgual.setForeground(Color.black);
             btnDivision.setForeground(Color.black);btnMulti.setForeground(Color.black);
             btnMenos.setForeground(Color.black);btnSuma.setForeground(Color.black);
@@ -483,10 +483,10 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setForeground(Color.black);btn5.setForeground(Color.black);
             btn6.setForeground(Color.black);btn7.setForeground(Color.black);
             btn8.setForeground(Color.black);btn9.setForeground(Color.black);
-            btnCE.setForeground(Color.black);
+            btnC.setForeground(Color.black);
             //Seteamos color de fondo botones
             btnMS.setBackground(Color.white);btnMR.setBackground(Color.white);
-            btnMC.setBackground(Color.white);btnC.setBackground(Color.white);
+            btnMC.setBackground(Color.white);btnCE.setBackground(Color.white);
             btnPunto.setBackground(Color.white);btnIgual.setBackground(Color.white);
             btnDivision.setBackground(Color.white);btnMulti.setBackground(Color.white);
             btnMenos.setBackground(Color.white);btnSuma.setBackground(Color.white);
@@ -495,7 +495,7 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setBackground(Color.white);btn5.setBackground(Color.white);
             btn6.setBackground(Color.white);btn7.setBackground(Color.white);
             btn8.setBackground(Color.white);btn9.setBackground(Color.white);
-            btnCE.setBackground(Color.white);
+            btnC.setBackground(Color.white);
             //Seteamos color del boton Creadores
             btnCreadores.setBackground(Color.white);
             btnCreadores.setForeground(Color.black);
@@ -512,7 +512,7 @@ public class Calculadora extends javax.swing.JFrame {
             ComboBoxColores.setBackground(Color.DARK_GRAY);
             //Seteamos color de letra de botones
             btnMS.setForeground(Color.white);btnMR.setForeground(Color.white);
-            btnMC.setForeground(Color.white);btnC.setForeground(Color.white);
+            btnMC.setForeground(Color.white);btnCE.setForeground(Color.white);
             btnPunto.setForeground(Color.white);btnIgual.setForeground(Color.white);
             btnDivision.setForeground(Color.white);btnMulti.setForeground(Color.white);
             btnMenos.setForeground(Color.white);btnSuma.setForeground(Color.white);
@@ -521,10 +521,10 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setForeground(Color.white);btn5.setForeground(Color.white);
             btn6.setForeground(Color.white);btn7.setForeground(Color.white);
             btn8.setForeground(Color.white);btn9.setForeground(Color.white);
-            btnCE.setForeground(Color.white);
+            btnC.setForeground(Color.white);
             //Seteamos color de fondo botones
             btnMS.setBackground(Color.DARK_GRAY);btnMR.setBackground(Color.DARK_GRAY);
-            btnMC.setBackground(Color.DARK_GRAY);btnC.setBackground(Color.DARK_GRAY);
+            btnMC.setBackground(Color.DARK_GRAY);btnCE.setBackground(Color.DARK_GRAY);
             btnPunto.setBackground(Color.DARK_GRAY);btnIgual.setBackground(Color.DARK_GRAY);
             btnDivision.setBackground(Color.DARK_GRAY);btnMulti.setBackground(Color.DARK_GRAY);
             btnMenos.setBackground(Color.DARK_GRAY);btnSuma.setBackground(Color.DARK_GRAY);
@@ -533,7 +533,7 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setBackground(Color.DARK_GRAY);btn5.setBackground(Color.DARK_GRAY);
             btn6.setBackground(Color.DARK_GRAY);btn7.setBackground(Color.DARK_GRAY);
             btn8.setBackground(Color.DARK_GRAY);btn9.setBackground(Color.DARK_GRAY);
-            btnCE.setBackground(Color.DARK_GRAY);
+            btnC.setBackground(Color.DARK_GRAY);
             //Seteamos color del boton Creadores
             btnCreadores.setBackground(Color.DARK_GRAY);
             btnCreadores.setForeground(Color.white);
@@ -550,7 +550,7 @@ public class Calculadora extends javax.swing.JFrame {
             ComboBoxColores.setBackground(Color.orange);
             //Seteamos color de letra de botones
             btnMS.setForeground(Color.blue);btnMR.setForeground(Color.blue);
-            btnMC.setForeground(Color.blue);btnC.setForeground(Color.blue);
+            btnMC.setForeground(Color.blue);btnCE.setForeground(Color.blue);
             btnPunto.setForeground(Color.blue);btnIgual.setForeground(Color.blue);
             btnDivision.setForeground(Color.blue);btnMulti.setForeground(Color.blue);
             btnMenos.setForeground(Color.blue);btnSuma.setForeground(Color.blue);
@@ -559,10 +559,10 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setForeground(Color.blue);btn5.setForeground(Color.blue);
             btn6.setForeground(Color.blue);btn7.setForeground(Color.blue);
             btn8.setForeground(Color.blue);btn9.setForeground(Color.blue);
-            btnCE.setForeground(Color.blue);
+            btnC.setForeground(Color.blue);
             //Seteamos color de fondo botones
             btnMS.setBackground(Color.orange);btnMR.setBackground(Color.orange);
-            btnMC.setBackground(Color.orange);btnC.setBackground(Color.orange);
+            btnMC.setBackground(Color.orange);btnCE.setBackground(Color.orange);
             btnPunto.setBackground(Color.orange);btnIgual.setBackground(Color.orange);
             btnDivision.setBackground(Color.orange);btnMulti.setBackground(Color.orange);
             btnMenos.setBackground(Color.orange);btnSuma.setBackground(Color.orange);
@@ -571,7 +571,7 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setBackground(Color.orange);btn5.setBackground(Color.orange);
             btn6.setBackground(Color.orange);btn7.setBackground(Color.orange);
             btn8.setBackground(Color.orange);btn9.setBackground(Color.orange); 
-            btnCE.setBackground(Color.orange);
+            btnC.setBackground(Color.orange);
             //Seteamos color del boton Creadores
             btnCreadores.setBackground(Color.orange);
             btnCreadores.setForeground(Color.blue);
@@ -588,7 +588,7 @@ public class Calculadora extends javax.swing.JFrame {
             ComboBoxColores.setBackground(Color.blue);
             //Seteamos color de letra de botones
             btnMS.setForeground(Color.white);btnMR.setForeground(Color.white);
-            btnMC.setForeground(Color.white);btnC.setForeground(Color.white);
+            btnMC.setForeground(Color.white);btnCE.setForeground(Color.white);
             btnPunto.setForeground(Color.white);btnIgual.setForeground(Color.white);
             btnDivision.setForeground(Color.white);btnMulti.setForeground(Color.white);
             btnMenos.setForeground(Color.white);btnSuma.setForeground(Color.white);
@@ -597,10 +597,10 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setForeground(Color.white);btn5.setForeground(Color.white);
             btn6.setForeground(Color.white);btn7.setForeground(Color.white);
             btn8.setForeground(Color.white);btn9.setForeground(Color.white);
-            btnCE.setForeground(Color.white);
+            btnC.setForeground(Color.white);
             //Seteamos color de fondo botones
             btnMS.setBackground(Color.blue);btnMR.setBackground(Color.blue);
-            btnMC.setBackground(Color.blue);btnC.setBackground(Color.blue);
+            btnMC.setBackground(Color.blue);btnCE.setBackground(Color.blue);
             btnPunto.setBackground(Color.blue);btnIgual.setBackground(Color.blue);
             btnDivision.setBackground(Color.blue);btnMulti.setBackground(Color.blue);
             btnMenos.setBackground(Color.blue);btnSuma.setBackground(Color.blue);
@@ -609,7 +609,7 @@ public class Calculadora extends javax.swing.JFrame {
             btn4.setBackground(Color.blue);btn5.setBackground(Color.blue);
             btn6.setBackground(Color.blue);btn7.setBackground(Color.blue);
             btn8.setBackground(Color.blue);btn9.setBackground(Color.blue);
-            btnCE.setBackground(Color.blue);
+            btnC.setBackground(Color.blue);
             //Seteamos color del boton Creadores
             btnCreadores.setBackground(Color.blue);
             btnCreadores.setForeground(Color.white);
@@ -751,16 +751,16 @@ public class Calculadora extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnPuntoActionPerformed
 
-    private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
+    private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
         String pantalla = txtPantalla.getText();
         if(pantalla.length()>0){
             pantalla=pantalla.substring(0,pantalla.length()-1);
             txtPantalla.setText(pantalla);
         }
         
-    }//GEN-LAST:event_btnCActionPerformed
+    }//GEN-LAST:event_btnCEActionPerformed
 
-    private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
+    private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
         Archivos archivos = new Archivos();
         if(!txtPantalla.getText().isEmpty() && inicio==false){
             try {
@@ -773,7 +773,7 @@ public class Calculadora extends javax.swing.JFrame {
             }
         }
         
-    }//GEN-LAST:event_btnCEActionPerformed
+    }//GEN-LAST:event_btnCActionPerformed
 
     private void btnEncendidoApagadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncendidoApagadoActionPerformed
         if(btnEncendidoApagado.isSelected()==true){
@@ -782,7 +782,7 @@ public class Calculadora extends javax.swing.JFrame {
             ImageIcon icon = new ImageIcon(url);
             btnEncendidoApagado.setIcon(icon);
             btnMS.setEnabled(true);btnMR.setEnabled(true);btnMC.setEnabled(true);
-            btnCE.setEnabled(true);btnC.setEnabled(true);btnPunto.setEnabled(true);
+            btnC.setEnabled(true);btnCE.setEnabled(true);btnPunto.setEnabled(true);
             btnIgual.setEnabled(true);btnDivision.setEnabled(true);btnMulti.setEnabled(true);
             btnMenos.setEnabled(true);btnSuma.setEnabled(true);btn0.setEnabled(true);
             btn1.setEnabled(true);btn2.setEnabled(true);btn3.setEnabled(true);
@@ -813,7 +813,7 @@ public class Calculadora extends javax.swing.JFrame {
             ImageIcon icon = new ImageIcon(url);
             btnEncendidoApagado.setIcon(icon);
             btnMS.setEnabled(false);btnMR.setEnabled(false);btnMC.setEnabled(false);
-            btnCE.setEnabled(false);btnC.setEnabled(false);btnPunto.setEnabled(false);
+            btnC.setEnabled(false);btnCE.setEnabled(false);btnPunto.setEnabled(false);
             btnIgual.setEnabled(false);btnDivision.setEnabled(false);btnMulti.setEnabled(false);
             btnMenos.setEnabled(false);btnSuma.setEnabled(false);btn0.setEnabled(false);
             btn1.setEnabled(false);btn2.setEnabled(false);btn3.setEnabled(false);
