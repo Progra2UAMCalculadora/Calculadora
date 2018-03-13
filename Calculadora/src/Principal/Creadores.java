@@ -53,6 +53,7 @@ public class Creadores extends javax.swing.JFrame {
 
         txtCreadores.setColumns(20);
         txtCreadores.setRows(5);
+        txtCreadores.setFocusable(false);
         jScrollPane1.setViewportView(txtCreadores);
 
         LabelFotoCreadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -71,19 +72,19 @@ public class Creadores extends javax.swing.JFrame {
         PanelSecundario.setLayout(PanelSecundarioLayout);
         PanelSecundarioLayout.setHorizontalGroup(
             PanelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LabelFotoCreadores, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(PanelSecundarioLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(PanelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelSecundarioLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(58, 58, 58))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelSecundarioLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(PanelSecundarioLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                         .addComponent(btnCreadoresFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addComponent(LabelFotoCreadores, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(25, Short.MAX_VALUE))))
         );
         PanelSecundarioLayout.setVerticalGroup(
             PanelSecundarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,10 +95,9 @@ public class Creadores extends javax.swing.JFrame {
                         .addComponent(btnCreadoresFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(LabelFotoCreadores, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                .addContainerGap())
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(LabelFotoCreadores, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

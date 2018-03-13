@@ -91,9 +91,10 @@ public class Calculadora extends javax.swing.JFrame {
 
         TextAreaCinta.setEditable(false);
         TextAreaCinta.setColumns(20);
-        TextAreaCinta.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        TextAreaCinta.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
         TextAreaCinta.setRows(5);
         TextAreaCinta.setAutoscrolls(false);
+        TextAreaCinta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         TextAreaCinta.setEnabled(false);
         TextAreaCinta.setFocusable(false);
         jScrollPane1.setViewportView(TextAreaCinta);
@@ -629,7 +630,14 @@ public class Calculadora extends javax.swing.JFrame {
     private void btnCreadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreadoresActionPerformed
         String eleccion = ComboBoxColores.getSelectedItem().toString();
         Creadores abrir = new Creadores();  //instancia el form 
-        abrir.txtCreadores.setText("Carlos\nJose");
+        abrir.txtCreadores.setText("Calculadora\n"
+                + "Version 1.0\n"
+                + "Carlos A. Pérez M.\n"
+                + "Jose\n"
+                + "\n"
+                + "            Marzo 2018\n"
+                + "            Programación II\n"
+                + "            Universidad Americana");
         abrir.setVisible(true);  //abre el form seleccionCampos
         this.dispose(); //Oculta ventana Actual
     }//GEN-LAST:event_btnCreadoresActionPerformed
@@ -876,12 +884,12 @@ public class Calculadora extends javax.swing.JFrame {
                 }else{
                     txtPantalla.setText(resultado);
                     TextAreaCinta.append(signo+" "+Temporal02+"\n");
-                    TextAreaCinta.append("------\n"+" "+resultado+"\n\n");
+                    TextAreaCinta.append("------\n"+"= "+resultado+"\n\n");
                     //Guardando en el archivo 
-                    archivos.GuardarCinta(" "+Temporal01);
+                    archivos.GuardarCinta("  "+Temporal01);
                     archivos.GuardarCinta(signo+" "+Temporal02);
                     archivos.GuardarCinta("------\n");
-                    archivos.GuardarCinta(" "+resultado);
+                    archivos.GuardarCinta("= "+resultado);
                     
                 }
             }
