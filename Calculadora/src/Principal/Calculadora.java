@@ -24,7 +24,7 @@ import javax.swing.JOptionPane;
  */
 public class Calculadora extends javax.swing.JFrame {
     String Temporal01, Temporal02, signo;
-    boolean inicio=true, Menos=false;
+    boolean inicio=true;
     /**
      * Creates new form Calculadora
      */
@@ -245,6 +245,14 @@ public class Calculadora extends javax.swing.JFrame {
         btnMenos.setBackground(new java.awt.Color(255, 255, 255));
         btnMenos.setText("-");
         btnMenos.setEnabled(false);
+        btnMenos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnMenosMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnMenosMousePressed(evt);
+            }
+        });
         btnMenos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMenosActionPerformed(evt);
@@ -643,211 +651,103 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCreadoresActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("0");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"0");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-0");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("0");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"0");
         }
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("1");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"1");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-1");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("1");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"1");
         }
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("2");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"2");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-2");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("2");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"2");
         }
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("3");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"3");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-3");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("3");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"3");
         }
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("4");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"4");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-4");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("4");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"4");
         }
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("5");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"5");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-5");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("5");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"5");
         }
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("6");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"6");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-6");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("6");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"6");
         }
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("7");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"7");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-7");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("7");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"7");
         }
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("8");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"8");
-        }*/
-        if(inicio){
-           if(Menos==true){
-               txtPantalla.setText("");
-               txtPantalla.setText("-8");
-           }else{
-               txtPantalla.setText("");
-               txtPantalla.setText("8");
-           }
-           inicio=false;
-        }else{
-            txtPantalla.setText(txtPantalla.getText()+"8");
         }
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        /*if(inicio){
+        if(inicio){
            txtPantalla.setText("");
            txtPantalla.setText("9");
            inicio=false;
         }else{
            txtPantalla.setText(txtPantalla.getText()+"9");
-        }*/
+        }
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
@@ -884,6 +784,7 @@ public class Calculadora extends javax.swing.JFrame {
                 TextAreaCinta.append("--Clear--\n");
                 //Guardando en el archivo
                 archivos.GuardarCinta("--Clear--\r\n");
+                Temporal01=""; Temporal02=""; signo="";
             } catch (IOException ex) {
                 Logger.getLogger(Calculadora.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -943,20 +844,6 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEncendidoApagadoActionPerformed
 
     private void btnMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenosActionPerformed
-        if(!txtPantalla.getText().isEmpty() && inicio==false){
-            Temporal01 =  txtPantalla.getText();
-            signo = "-";
-            txtPantalla.setText("");
-            TextAreaCinta.append("  "+Temporal01+"\n");
-        }
-        if(!txtPantalla.getText().isEmpty() && inicio==true){
-            Menos=true;
-            System.out.println("Colocanco menos en true");
-        }
-        /*if(txtPantalla.getText().isEmpty() && inicio==true){
-            Menos=true;
-            System.out.println("Colocanco menos en false");
-        }*/
     }//GEN-LAST:event_btnMenosActionPerformed
 
     private void btnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumaActionPerformed
@@ -1018,7 +905,6 @@ public class Calculadora extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_btnIgualActionPerformed
-
     private void txtPantallaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPantallaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPantallaActionPerformed
@@ -1061,6 +947,33 @@ public class Calculadora extends javax.swing.JFrame {
         }
         txtPantalla.setText("");
     }//GEN-LAST:event_btnMCActionPerformed
+
+    private void btnMenosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMenosMousePressed
+               
+    }//GEN-LAST:event_btnMenosMousePressed
+
+    private void btnMenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMenosMouseClicked
+        int CuentaClick =  evt.getClickCount();
+        if(CuentaClick==1){
+            if(!txtPantalla.getText().isEmpty() && inicio==false){
+                Temporal01 =  txtPantalla.getText();
+                signo = "-";
+                txtPantalla.setText("");
+                TextAreaCinta.append("  "+Temporal01+"\n");
+            }
+        }
+        if(CuentaClick==2){
+            if(!txtPantalla.getText().isEmpty() || txtPantalla.getText().isEmpty()){
+                if(inicio){
+                    txtPantalla.setText("");
+                    txtPantalla.setText("-");
+                    inicio=false;
+                 }else{
+                    txtPantalla.setText(txtPantalla.getText()+"-");
+                }
+            }
+        }
+    }//GEN-LAST:event_btnMenosMouseClicked
 
     /**
      * @param args the command line arguments
