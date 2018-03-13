@@ -91,7 +91,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         TextAreaCinta.setEditable(false);
         TextAreaCinta.setColumns(20);
-        TextAreaCinta.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        TextAreaCinta.setFont(new java.awt.Font("Monospaced", 1, 20)); // NOI18N
         TextAreaCinta.setRows(5);
         TextAreaCinta.setAutoscrolls(false);
         TextAreaCinta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -890,7 +890,6 @@ public class Calculadora extends javax.swing.JFrame {
                     archivos.GuardarCinta(signo+" "+Temporal02);
                     archivos.GuardarCinta("------\n");
                     archivos.GuardarCinta("= "+resultado);
-                    
                 }
             }
         } catch (Exception e) {
