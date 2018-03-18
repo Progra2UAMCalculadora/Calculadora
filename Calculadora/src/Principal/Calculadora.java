@@ -983,7 +983,6 @@ public void Apagar(){
     }//GEN-LAST:event_btnSignoActionPerformed
 
     private void btn_definirColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_definirColorActionPerformed
-       JColorChooser ColorChooser = new JColorChooser();
        Color = JColorChooser.showDialog(null, "Coge color", Color);
        jPanel1.setBackground(Color);
     }//GEN-LAST:event_btn_definirColorActionPerformed
